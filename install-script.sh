@@ -1,9 +1,10 @@
-sudo apt install neovim 
-
-
-
-
-
+sudo apt install neovim \
+	ranger \
+	libopencv-dev \
+	ffmpeg \
+	aptitude \
+	trash-cli \
+	cmake
 
 putgitrepo() { # Downlods a gitrepo $1 and places the files in $2 only overwriting conflicts
 	#dialog --infobox "Downloading and installing config files..." 4 60
