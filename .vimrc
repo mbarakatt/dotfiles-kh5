@@ -1,5 +1,7 @@
 autocmd BufEnter * set mouse=
 syntax on
+let mapleader =" " " space works well with both US an CSA keyboard layouts
+
 """"""""""""""" MORE RANDOM STUFF """""""""""""""""
 
 " Return to last edit position when opening files
@@ -46,3 +48,9 @@ syntax on
 	exe "normal `z"
 	endfunc
 	autocmd BufWrite *.py :call DeleteTrailingWS()
+
+" Copy selected text to system clipboard (requires gvim/nvim/vim-x11 installed):
+	vnoremap <C-c> "+y
+	map <C-p> "+P
+	inoremap <C-v> <Esc>"+pa
+
