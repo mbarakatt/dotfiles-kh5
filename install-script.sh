@@ -1,4 +1,8 @@
-sudo apt install neovim \
+#!/bin/bash
+# should be run with sudo
+apt update
+apt upgrade
+apt install neovim \
 	ranger \
 	libopencv-dev \
 	ffmpeg \
