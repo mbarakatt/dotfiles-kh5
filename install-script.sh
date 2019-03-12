@@ -1,8 +1,7 @@
 #!/bin/bash
-# should be run with sudo
-apt update
-apt upgrade
-apt install neovim \
+sudo apt update
+sudo apt upgrade
+sudo apt install neovim \
 	ranger \
 	libopencv-dev \
 	ffmpeg \
@@ -21,6 +20,6 @@ putgitrepo() { # Downlods a gitrepo $1 and places the files in $2 only overwriti
 
 
 name=$(whoami)
-dotfilesrepo="git@github.com:mbarakatt/dotfiles-kh5.git"
+dotfilesrepo="https://jgithub.com:mbarakatt/dotfiles-kh5.git"
 putgitrepo "$dotfilesrepo" "/home/$name"
 
