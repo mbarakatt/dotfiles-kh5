@@ -20,6 +20,6 @@ putgitrepo() { # Downlods a gitrepo $1 and places the files in $2 only overwriti
 
 
 name=$(whoami)
-dotfilesrepo="https://github.com:mbarakatt/dotfiles-kh5.git"
+dotfilesrepo="https://github.com/mbarakatt/dotfiles-kh5.git"
 putgitrepo "$dotfilesrepo" "/home/$name"
 
